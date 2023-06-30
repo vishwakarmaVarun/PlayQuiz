@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: #001042;
+}
+
+.container{
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.container h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 26px;
+    border-bottom: 2px solid red;
+}
+
+.quiz{
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: chocolate;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.btn{
+    width: 100%;
+    font-weight: 500;
+    background: #fff;
+    color: #222;
+    padding: 15px;
+    text-align: left;
+    margin: 10px 0;
+    outline: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.btn:hover:not([disabled]){
+    background: #222;
+    color: #fff;
+}
+
+.btn:disabled{
+    cursor: no-drop;
+}
+
+#next-btn{
+    font-size: 18px;
+    color: #fff;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid #00118f;
+    outline: 0;
+    background: #00118f;
+    cursor: pointer;
+    display: none;
+    transition: all .3s;
+}
+
+#next-btn:hover{
+    background: transparent;
+    color: #00118f;
+}
+
+.correct{
+    background: #9aeabc;
+}
+
+.incorrect{
+    background: #ff9393;
+}
