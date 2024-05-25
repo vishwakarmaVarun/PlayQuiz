@@ -3,21 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlayQuiz - By Varun Vishwakarma</title>
+    <link rel="icon" href="quizlogo.jpg" type="image/*"/>
+    <title>PlayQuiz - Increase your Knowledge</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logocontainer">
+            <div class="logo"><img src="quizlogo.jpg" alt="quiz logo">PlayQuiz</div>
+        </div>
+        <div class="nav-links">
+            <select id="category-select">
+                <option value="any">Any Category</option>
+                <option value="9">General Knowledge</option>
+                <option value="18">Science: Computers</option>
+                <!-- Add more categories as needed -->
+            </select>
+            <select id="type-select">
+                <option value="multiple">Multiple Choice</option>
+                <option value="boolean">True/False</option>
+            </select>
+            <select id="difficulty-select">
+                <option value="any">Any Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+    </nav>
     <div class="container">
         <h1>Simple Quiz</h1>
-        <div class="quiz">
-            <h2 id="questions">Question goes here</h2>
-            <div class="answers-btns" id="answers-btns">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
+        <div class="quiz-container">
+            <div class="loading-state" id="loading-state">
+                <div class="loading"></div>
             </div>
-            <button id="next-btn">Next</button>
+            <h2 id="questions"></h2>
+            <div class="answers-btns" id="answers-btns">
+            </div>
+            <button id="next-btn"></button>
         </div>
     </div>
     <script src="quiz.js"></script>
