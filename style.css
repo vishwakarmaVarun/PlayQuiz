@@ -87,7 +87,7 @@ body{
     max-width: 600px;
     margin: 60px auto 0;
     border-radius: 10px;
-    padding: 30px;
+    padding: 25px;
 }
 
 .container h1{
@@ -100,7 +100,6 @@ body{
 
 .quiz-container{
     position: relative;
-    padding: 20px 0;
 }
 
 .quiz-container h2{
@@ -136,7 +135,7 @@ body{
 #next-btn{
     font-size: 18px;
     color: #fff;
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     padding: 10px 15px;
     border-radius: 5px;
     border: 2px solid #00118f;
